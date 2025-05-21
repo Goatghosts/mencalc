@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Mencalc</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div id="app">
+        <header class="top">
+            <div id="history" class="history">
+                <div class="row" id="h0"></div>
+                <div class="row" id="h1"></div>
+                <div class="row" id="h2"></div>
+            </div>
+            <div id="timer" class="timer">30.0</div>
+            <div class="scorebox">
+                <div id="score" class="score">0</div>
+                <div id="mult" class="mult">x1</div>
+            </div>
+        </header>
+
+        <main class="problem">
+            <span id="a"></span>
+            <span> + </span>
+            <span id="b"></span>
+            <span> = </span>
+            <span id="answer" class="answer"></span>
+        </main>
+
+        <footer class="keyboard" id="kbd">
+            <button data-n="1">1</button><button data-n="2">2</button><button data-n="3">3</button>
+            <button data-n="4">4</button><button data-n="5">5</button><button data-n="6">6</button>
+            <button data-n="7">7</button><button data-n="8">8</button><button data-n="9">9</button>
+            <div></div><button data-n="0">0</button><button id="bksp" class="bksp">←</button>
+        </footer>
+    </div>
+
+    <div id="overlay" class="overlay hidden">
+        <div class="dialog">
+            <div id="endtext"></div>
+            <button id="extra" class="btn">+30 сек</button>
+            <button id="restart" class="btn">OK</button>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,140 @@
+:root {
+    --prob-size: 2.6rem;
+    --accent: #0af;
+    --bg: #111;
+    --btn: #2b2b2b;
+    --btnDel: #c33;
+    font-size: 24px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Segoe UI", Roboto, Arial, sans-serif;
+    font-weight: 900
+}
+
+body {
+    background: var(--bg);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh
+}
+
+#app {
+    width: 430px;
+    max-width: 95vw
+}
+
+.top {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.2rem
+}
+
+.history {
+    width: 38%
+}
+
+.history .row {
+    height: 1.35rem;
+    white-space: nowrap;
+    overflow: hidden
+}
+
+.timer {
+    font-weight: bold;
+    text-align: center;
+    width: 24%
+}
+
+.scorebox {
+    width: 38%;
+    text-align: right
+}
+
+.score {
+    font-size: 1.25rem
+}
+
+.mult {
+    font-size: .8rem;
+    color: var(--accent)
+}
+
+.problem {
+    font-size: var(--prob-size);
+    text-align: center;
+    margin-bottom: 1.6rem;
+    white-space: nowrap;
+    user-select: none
+}
+
+.answer {
+    min-width: 5.8rem;
+    border-bottom: .18rem solid var(--accent);
+    display: inline-block;
+    text-align: center
+}
+
+.keyboard {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: .75rem
+}
+
+.keyboard button {
+    font-size: 1.7rem;
+    padding: 1rem 0;
+    border: none;
+    border-radius: .2rem;
+    background: var(--btn);
+    color: #fff
+}
+
+.keyboard button:active {
+    background: #555
+}
+
+.bksp {
+    background: var(--btnDel)
+}
+
+.overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, .8);
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.hidden {
+    display: none
+}
+
+.dialog {
+    background: #222;
+    padding: 2rem;
+    border-radius: .5rem;
+    text-align: center;
+    width: 280px
+}
+
+.dialog .btn {
+    margin-top: .9rem;
+    padding: .75rem 1rem;
+    border: none;
+    border-radius: .3rem;
+    background: var(--accent);
+    color: #fff;
+    font-size: 1rem;
+    width: 100%
+}
+
+.dialog .btn:active {
+    background: #09f
+}
